@@ -1,3 +1,4 @@
-## Yo, I'm a Readme
+## GitHub Profile Re-creation
 
-You should probably update me so people looking at your code have an idea what it is being used for :)
+Using GitHub's api, I recreated most of my profile page.<br />
+Check it out: http://jeff-coons.github.io/GitHub-Profile/
