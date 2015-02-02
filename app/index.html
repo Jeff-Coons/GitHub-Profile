@@ -1,0 +1,196 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Github Profile - Jeff Coons</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.css"/>
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+
+    <header><!-- beginning of header -->
+      <div class="container"><!-- beginning of container -->
+
+        <a href="#" class="github-icon">
+          <span class="mega-octicon octicon-mark-github"></span>
+        </a>
+        <span class="inputspan">
+          <input type="search" placeholder="Search GitHub">
+        </span>
+
+
+        <ul class="header-nav-left"><!-- beginning of header-nav-left -->
+          <a href="#"><li>Explore</li></a>
+          <a href="#"><li>Gist</li></a>
+          <a href="#"><li>Blog</li></a>
+          <a href="#"><li>Help</li></a>
+        </ul><!-- end of header-nav-left -->
+
+
+        <ul class="header-nav-right"><!-- beginning of header-nav-right -->
+
+          <li>
+            <a href="#">
+              <img src="https://avatars.githubusercontent.com/u/7240384?v=2"/>
+              <span class="header-nav-username">Jeff-Coons</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="octicon octicon-plus"></span>
+              <span class="octicon octicon-triangle-down"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="mega-octicon octicon-inbox"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="mega-octicon octicon-gear"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="mega-octicon octicon-sign-out"></span>
+            </a>
+          </li>
+
+        </ul><!-- end of header-nav-right -->
+
+
+      </div><!-- end of container -->
+    </header><!-- end of header -->
+
+
+    <div class="container">
+      <div class="sidebar"><!-- beginning of sidebar -->
+        <script type="text/template" id="profile-sidebar">
+
+          <div class="sidebar-avatar"><!-- beginning of sidebar avatar & name -->
+            <a href="<%= avatarImg %>"><img src="<%= avatarImg %>"/></a>
+            <div class="user-name"><h1><%= person %></h1><h3 class="login"><%= username %></h3>
+            </div>
+          </div><!-- end of sidebar avatar & name -->
+
+          <div class="sidebar-info"><!-- beginning of sidebar info -->
+            <ul>
+              <li>
+                <div><span class="octicon octicon-location"></span></div>
+                <p><%= location %></p>
+              </li>
+              <li>
+                <div><span class="octicon octicon-mail"></span></div>
+                <a href="mailto:<%= email %>"><%= email %></a>
+              </li>
+              <li>
+                <div><span class="octicon octicon-clock"></span></div>
+                <p>Joined on <%= creationDate %></p>
+              </li>
+            </ul>
+          </div><!-- end of sidebar info -->
+
+          <div class="sidebar-stats"><!-- beginning of sidebar stats -->
+            <div class="followers">
+              <a href="<%= followersUrl %>"><h1><%= followers %></h1><span>Followers</span></a>
+            </div>
+            <div class="sidebar-starred">
+              <a href="https://github.com/stars"><h1><%= starData %></h1><span>Starred</span></a>
+            </div>
+            <div class="following">
+              <a href="<%= followingUrl %>"><h1><%= following %></h1><span>Following</span></a>
+            </div>
+          </div><!-- end of sidebar stats -->
+
+        </script>
+      </div><!-- end of sidebar -->
+
+
+      <div class="repository-body"><!-- beginning of repository -->
+        <script type="text/template" id="repository">
+          <ul class="projectlist">
+            <li>
+              <div class="projectStats">
+                <span><%= type %></span>
+                <div class="projectStats-icons">
+                  <a href="<%= starredUrl %>">
+                    <span class="octicon octicon-star"></span>
+                    <span>0</span>
+                  </a>
+                  <a href="<%= forksUrl %>">
+                    <span class="octicon octicon-git-branch"></span>
+                    <span>0</span>
+                  </a>
+                </div>
+              </div>
+              <a href="<%= projectUrl %>">
+                <h2><%= projectName %></h2>
+              </a>
+              <p><%= repoDescription %></p>
+              <span>Updated <%= updatedTime %></span>
+            </li>
+          </ul>
+        </script>
+      </div><!-- end of repository -->
+    </div><!-- end of container -->
+
+
+    <footer><!-- Beginning of footer -->
+
+      <div class="container"><!-- Beginning of container -->
+        <ul class="footer-left">
+          <li><span>&copy; 2014 GitHub, Inc.</span></li>
+          <li><a href="https://help.github.com/articles/github-terms-of-service">Terms</a></li>
+          <li><a href="https://help.github.com/articles/github-privacy-policy">Privacy</a></li>
+          <li><a href="https://help.github.com/articles/github-security">Security</a></li>
+          <li><a href="https://github.com/contact">Contact</a></li>
+        </ul>
+        <div class="footer-icon"><a href="http://github.com"><span class="octicon octicon-mark-github"></span></a></div>
+        <ul class="footer-right">
+          <li><a href="https://status.github.com/">Status</a></li>
+          <li><a href="https://developer.github.com">API</a></li>
+          <li><a href="https://training.github.com/">Training</a></li>
+          <li><a href="https://github.myshopify.com/">Shop</a></li>
+          <li><a href="https://github.com/blog">Blog</a></li>
+          <li><a href="https://github.com/about">About</a></li>
+        </ul>
+
+      </div><!-- end of container -->
+
+    </footer><!-- end of footer -->
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/underscore/underscore.js"></script>
+    <script src="../bower_components/moment/moment.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script type="text/javascript" src="token.js"></script>
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
